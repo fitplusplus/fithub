@@ -1,3 +1,7 @@
-# Plantilla del curso programación para QA
+# Fithub
 
-Plantilla para el [curso de desarrollo para QA](https://jj.github.io/curso-tdd)
+## Contributors 
+| Name | Nick | Mail | 
+| ---- | ---- | ---- | 
+| Elena | @elenamerelo | elenamerelo@correou.ugr.es | 
+| Antonio | @antoniogamiz | antoniogamiz10@gmail.com |
