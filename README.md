@@ -2,7 +2,9 @@
 
 ## Descripción
 
-Programador de workouts, basado en la elección de un grupo muscular, número de repeticiones, tiempo y tipo de entrenamiento.
+Problema a resolver: queremos crear una herramiento para crear workouts personalizados basados en la elección de grupo muscular, número de repeticiones, intensidad o tipo de entrenamiento.
+
+Solución propuesta: crear una interfaz CLI y una pequeña base de datos con ejercicios. El usuario especificará los parámetros deseados para crear su workout, y este aparecerá como una cadena de texto en la terminal.
 
 ## Contribuidores
 
