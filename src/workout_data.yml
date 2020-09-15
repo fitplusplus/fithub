@@ -1,0 +1,6 @@
+exercises:
+  - name: plank
+    intensity: high
+    muscle_group: upperbody
+    description: "isometric core strength exercise"
+    link: "https://www.youtube.com/watch?v=OuFDY0fwlvk"
