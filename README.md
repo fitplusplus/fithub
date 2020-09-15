@@ -6,7 +6,7 @@ Problema a resolver: queremos crear una herramiento para crear workouts personal
 
 Solución propuesta: crear una interfaz CLI y una pequeña base de datos con ejercicios. El usuario especificará los parámetros deseados para crear su workout, y este aparecerá como una cadena de texto en la terminal.
 
-## Herramientas 
+## Herramientas
 
 La elección de la siguiente lista la discutimos [aquí](https://github.com/fitplusplus/fithub/issues/7)
 
@@ -14,6 +14,10 @@ La elección de la siguiente lista la discutimos [aquí](https://github.com/fitp
 - Logging: módulo `logging` de `Python` (localmente) y PaperTrails o LogDNA (servidor).
 - Servicio de configuración remota: `etcd`.
 - Base de datos: MongoDB al principio, posiblemente PostgreSQL en el futuro.
+
+## Estructura del proyecto
+
+- En la carpeta [src](src/) se encuentra el código del proyecto.
 
 ## Contribuidores
 
