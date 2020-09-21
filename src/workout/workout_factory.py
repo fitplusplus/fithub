@@ -1,19 +1,19 @@
 from enum import Enum, auto
 
 
-class MuscleGroup(enum):
+class MuscleGroup(Enum):
     UPPERBODY = auto()
     LOWERBODY = auto()
     TOTALBODY = auto()
 
 
-class Intensity(enum):
+class Intensity(Enum):
     LOW = auto()
     MEDIUM = auto()
     HIGH = auto()
 
 
-class Duration(enum):
+class Duration(Enum):
     SHORT = auto()
     MEDIUM = auto()
     LONG = auto()
