@@ -4,3 +4,33 @@ exercises:
     muscle_group: upperbody
     description: "isometric core strength exercise"
     link: "https://www.youtube.com/watch?v=OuFDY0fwlvk"
+  - name: squat
+    intensity: low
+    muscle_group: lowerbody
+    description: "strength exercise in which the trainee lowers their hips from a standing position and then stands back up."
+    link: "https://www.youtube.com/watch?v=z0dJSO_viWg"
+  - name: pushup
+    intensity: high
+    muscle_group: upperbody
+    description: "exercise done laying with face, palms and toes facing down, keeping legs and back straight, extending arms straight to push body up and back down again"
+    link: "https://www.youtube.com/watch?v=IODxDxX7oi4"
+  - name: mountainclimber
+    intensity: medium
+    muscle_group: totalbody
+    description: "Performed from a plank position, you'll alternate bringing one knee to your chest, then back out again, speeding up each time until you're running against the floor."
+    link: "https://www.youtube.com/watch?v=nmwgirgXLYM"
+  - name: superman
+    intensity: low
+    muscle_group: upperbody
+    description: "Keeping your arms and legs straight (but not locked) and torso stationary, simultaneously lift your arms and legs up toward the ceiling to form an elongated u shape with your body — back arches and arms and legs lift several inches off the floor. Hold for two to five seconds and lower back down to complete one."
+    link: "https://www.youtube.com/watch?v=z6PJMT2y8GQ"
+  - name: burpee
+    intensity: high
+    muscle_group: totalbody
+    description: "squat thrust with an additional stand between reps"
+    link: "https://www.youtube.com/watch?v=dZgVxmf6jkA" 
+  - name: jumpingjack
+    intensity: medium
+    muscle_group: totalbody
+    description: "exercise performed by jumping to a position with the legs spread wide and the hands going overhead, sometimes in a clap, and then returning to a position with the feet together and the arms at the sides"
+    link: "https://www.youtube.com/watch?v=c4DAnQ6DtF8"
