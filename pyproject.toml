@@ -17,4 +17,4 @@ requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
 
 [tool.poe.tasks]
-test = "echo 'hi'"
+test = "poetry run python -m pytest"

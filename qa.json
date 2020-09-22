@@ -1,8 +1,13 @@
 {
-	"lenguaje" : "Python",
-	"build" : "pyproject.toml",
-	"ficheros" : ["src/user/user.py", 
+	"lenguaje": "Python",
+	"build": "pyproject.toml",
+	"ficheros": [
+		"src/user/user.py",
 		"src/workout/exercise.py",
 		"src/workout/workout_factory.py",
-		"src/workout/workout.py"]
+		"src/workout/workout.py"
+	],
+	"test": [
+		"pyproject.toml"
+	]
 }
