@@ -1,22 +1,6 @@
 from enum import Enum, auto
 import yaml 
-
-class MuscleGroup(Enum):
-    UPPERBODY = auto()
-    LOWERBODY = auto()
-    TOTALBODY = auto()
-
-
-class Intensity(Enum):
-    LOW = auto()
-    MEDIUM = auto()
-    HIGH = auto()
-
-
-class Duration(Enum):
-    SHORT = auto()
-    MEDIUM = auto()
-    LONG = auto()
+from src.workout.exercise  import *
 
 
 class WorkoutFactory:
