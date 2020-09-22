@@ -31,7 +31,9 @@ class Exercise:
         self.link = link  
 
     def __str__(self):
-        return "WIP"
+        return self.name
+        
+    __repr__ = __str__
 
     @property
     def reps(self):

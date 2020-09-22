@@ -14,11 +14,11 @@ class WorkoutFactory:
     def create_workout(self, muscle_group, intensity, duration):
         pass
 
-    def filter_by_intensity(self):
-        pass
+    def filter_by_intensity(self, intensity):
+       return list(filter(lambda x: x.intensity == intensity , self.exercises))
 
-    def filter_by_muscle_group(self):
-        pass
+    def filter_by_muscle_group(self, muscle_group):
+        return list(filter(lambda x: x.muscle_group == muscle_group , self.exercises))
 
     def read_exercises(self, path_file):
         a_yaml_file = open(path_file)

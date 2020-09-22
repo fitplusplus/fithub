@@ -23,3 +23,16 @@ def test_constructor():
 
     muscle_groups = list(map(lambda x : x.muscle_group, array))
     assert muscle_groups == [MuscleGroup.UPPERBODY, MuscleGroup.LOWERBODY, MuscleGroup.UPPERBODY, MuscleGroup.TOTALBODY, MuscleGroup.UPPERBODY, MuscleGroup.TOTALBODY, MuscleGroup.TOTALBODY]
+
+def test_filter_by_intensity():
+    data = WorkoutFactory(DATA_FILE)
+    filtered_exercises = data.filter_by_intensity(Intensity.LOW) 
+    names = list(map(lambda x: x.name, filtered_exercises))
+    assert names == ['squat', 'superman']
+
+def test_filter_by_muscle_group():
+    data = WorkoutFactory(DATA_FILE)
+    filtered_exercises = data.filter_by_muscle_group(MuscleGroup.TOTALBODY) 
+    names = list(map(lambda x: x.name, filtered_exercises))
+    assert names == ['mountainclimber', 'burpee', 'jumpingjack']
+    
