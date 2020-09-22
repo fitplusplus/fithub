@@ -5,7 +5,11 @@ from src.workout.exercise  import *
 
 class WorkoutFactory:
     def __init__(self, path_file):
-        self.exercises = self.read_exercises(path_file)
+        def extract_exercises(e):
+            return Exercise(e["name"], e["intensity"], e["muscle_group"], e["description"], e["link"])
+            
+        array = self.read_exercises(path_file)
+        self.exercises = list(map(extract_exercises, array))
 
     def create_workout(self, muscle_group, intensity, duration):
         pass
