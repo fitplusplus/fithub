@@ -28,3 +28,13 @@ La elección de la siguiente lista la discutimos [aquí](https://github.com/fitp
 | Elena   | @elenamerelo  | elenamerelo@correo.ugr.es |
 | Antonio | @antoniogamiz | antoniogamiz10@gmail.com  |
 
+# Instrucciones
+
+Para instalar las dependencias:
+
+	poetry install
+
+Para ejecutar los tests:
+
+	poetry run poe test
+
