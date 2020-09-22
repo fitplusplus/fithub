@@ -21,9 +21,7 @@ class Duration(Enum):
 
 class WorkoutFactory:
     def __init__(self, path_file):
-        self.workouts = []
-        self.read_exercises(path_file)
-    
+        self.exercises = self.read_exercises(path_file)
 
     def create_workout(self, muscle_group, intensity, duration):
         pass
