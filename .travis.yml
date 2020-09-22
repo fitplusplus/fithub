@@ -8,5 +8,3 @@ install:
 
 script: 
   - poetry run poe test
-
-script: /bin/true
