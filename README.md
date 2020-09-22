@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/fitplusplus/fithub.svg?branch=master)](https://travis-ci.com/fitplusplus/fithub)
+
 # Fithub
 
 ## Descripción
