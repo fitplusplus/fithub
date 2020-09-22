@@ -9,5 +9,6 @@
 	],
 	"test": [
 		"pyproject.toml"
-	]
+	],
+	"runner": "poetry run poe"
 }
