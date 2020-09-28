@@ -1,6 +1,6 @@
 from enum import Enum, auto
 import yaml
-from src.workout.exercise  import *
+from src.workout.exercise import *
 
 
 class WorkoutFactory:
@@ -11,21 +11,16 @@ class WorkoutFactory:
         array = self.read_exercises(path_file)
         self.exercises = list(map(extract_exercises, array))
 
-    # TODO:
-    def create_workout(self, muscle_group, intensity, duration):
-        pass
+    def create_workout(self, muscle_group, intensity):
 
     def filter_by_intensity(self, intensity):
-       return list(filter(lambda x: x.intensity == intensity , self.exercises))
+        return list(filter(lambda x: x.intensity == intensity, exercises))
 
     def filter_by_muscle_group(self, muscle_group):
-        return list(filter(lambda x: x.muscle_group == muscle_group , self.exercises))
+        return list(filter(lambda x: x.muscle_group == muscle_group, self.exercises))
 
     def read_exercises(self, path_file):
         a_yaml_file = open(path_file)
-        parsed_yaml_file = yaml.load(a_yaml_file, Loader=yaml.FullLoader).get("exercises")
+        parsed_yaml_file = yaml.load(
+            a_yaml_file, Loader=yaml.FullLoader).get("exercises")
         return parsed_yaml_file
-
-# TODO: the cli
-# see https://towardsdatascience.com/a-simple-way-to-create-python-cli-app-1a4492c164b6
-# to create the CLI

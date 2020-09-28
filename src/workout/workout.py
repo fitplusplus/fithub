@@ -1,6 +1,6 @@
 class Workout:
     # TODO:
-    def __init__(self, duration, intensity, muscle_group, total_duration, rest_time, exercises):
+    def __init__(self, intensity, muscle_group, exercises):
         pass
 
     def __str__(self):

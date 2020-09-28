@@ -11,7 +11,7 @@ def init(intensity: str, muscle_group: str):
     :return: workout based on intensity and muscle group
     """
     factory = WorkoutFactory("./src/workout_data.yml")
-    return factory.create_workout(intensity, muscle_group, "")
+    return factory.create_workout(intensity, muscle_group)
 
 
 if __name__ == "__main__":
