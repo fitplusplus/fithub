@@ -11,7 +11,7 @@ class WorkoutFactory:
         array = self.read_exercises(path_file)
         self.exercises = list(map(extract_exercises, array))
 
-    def create_workout(self, muscle_group, intensity):
+    def create_workout(self, intensity, muscle_group):
         exercises = self.filter_by_intensity(intensity)
         exercises = self.filter_by_muscle_group(muscle_group, exercises)
         return exercises

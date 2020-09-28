@@ -1,6 +1,7 @@
 import fire
 
 from src.workout.workout_factory import *
+from src.workout.exercise import *
 
 
 def init(intensity: str, muscle_group: str):
@@ -11,7 +12,9 @@ def init(intensity: str, muscle_group: str):
     :return: workout based on intensity and muscle group
     """
     factory = WorkoutFactory("./src/workout_data.yml")
-    return factory.create_workout(intensity, muscle_group)
+    exercises = factory.create_workout(
+        intensityMapping[intensity], muscleGroupMapping[muscle_group])
+    return exercises
 
 
 if __name__ == "__main__":

@@ -35,9 +35,8 @@ class Exercise:
         self.description = description
         self.link = link
 
-    # TODO: print nicely
     def __str__(self):
-        return self.name
+        return '\tName: {}, Description: {}, Link: {}'.format(self.name, self.description, self.link)
 
     __repr__ = __str__
 
