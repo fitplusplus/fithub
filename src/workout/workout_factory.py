@@ -12,12 +12,15 @@ class WorkoutFactory:
         self.exercises = list(map(extract_exercises, array))
 
     def create_workout(self, muscle_group, intensity):
+        exercises = self.filter_by_intensity(intensity)
+        exercises = self.filter_by_muscle_group(muscle_group, exercises)
+        return exercises
 
-    def filter_by_intensity(self, intensity):
-        return list(filter(lambda x: x.intensity == intensity, exercises))
+    def filter_by_intensity(self, intensity, exercises=[]):
+        return list(filter(lambda x: x.intensity == intensity, exercises or self.exercises))
 
-    def filter_by_muscle_group(self, muscle_group):
-        return list(filter(lambda x: x.muscle_group == muscle_group, self.exercises))
+    def filter_by_muscle_group(self, muscle_group, exercises=[]):
+        return list(filter(lambda x: x.muscle_group == muscle_group, exercises or self.exercises))
 
     def read_exercises(self, path_file):
         a_yaml_file = open(path_file)
