@@ -1,5 +1,5 @@
 from enum import Enum, auto
-import yaml 
+import yaml
 from src.workout.exercise  import *
 
 
@@ -7,10 +7,11 @@ class WorkoutFactory:
     def __init__(self, path_file):
         def extract_exercises(e):
             return Exercise(e["name"], e["intensity"], e["muscle_group"], e["description"], e["link"])
-            
+
         array = self.read_exercises(path_file)
         self.exercises = list(map(extract_exercises, array))
 
+    # TODO:
     def create_workout(self, muscle_group, intensity, duration):
         pass
 
@@ -25,5 +26,6 @@ class WorkoutFactory:
         parsed_yaml_file = yaml.load(a_yaml_file, Loader=yaml.FullLoader).get("exercises")
         return parsed_yaml_file
 
+# TODO: the cli
 # see https://towardsdatascience.com/a-simple-way-to-create-python-cli-app-1a4492c164b6
 # to create the CLI
