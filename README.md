@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/fitplusplus/fithub.svg?branch=master)](https://travis-ci.com/fitplusplus/fithub)
+[![codecov](https://codecov.io/gh/fitplusplus/fithub/branch/master/graph/badge.svg)](https://codecov.io/gh/fitplusplus/fithub)
 
 # Fithub
 
