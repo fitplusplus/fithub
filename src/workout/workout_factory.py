@@ -1,5 +1,6 @@
 from enum import Enum, auto
 import yaml
+import random
 from src.workout.exercise import *
 from src.workout.workout import *
 
@@ -16,6 +17,11 @@ class WorkoutFactory:
         exercises = self.filter_by_muscle_group(muscle_group, exercises)
         wod = Workout(intensity, muscle_group, exercises)
         return wod
+
+    def create_random_workout(self):
+        intensidad = intensityMapping[random.choice(list(intensityMapping))]
+        muscle = muscleGroupMapping[random.choice(list(muscleGroupMapping))]
+        return self.create_workout(intensidad, muscle)
 
     def filter_by_intensity(self, intensity, exercises=[]):
         return list(filter(lambda x: x.intensity == intensity, exercises or self.exercises))
