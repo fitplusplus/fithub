@@ -4,10 +4,13 @@ python:
 
 install:
   - pip install poetry
+  - pip install coverage
+  - pip install codecov
   - poetry install 
-
+  
 script: 
   - poetry run poe test
+  - poetry run poe coverage
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

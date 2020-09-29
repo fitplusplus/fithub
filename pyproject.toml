@@ -8,6 +8,7 @@ authors = ["Antonio Gamiz <antoniogamiz10@gmail.com>"]
 python = "3.6.9"
 fire = "^0.3.1"
 pyyaml = "^5.3.1"
+pytest-cov = "2.10.1"
 
 [tool.poetry.dev-dependencies]
 poethepoet = "^0.8.0"
@@ -18,3 +19,4 @@ build-backend = "poetry.masonry.api"
 
 [tool.poe.tasks]
 test = "poetry run python -m pytest"
+coverage = "python -m pytest --cov=./"
