@@ -1,7 +1,7 @@
 from enum import Enum, auto
 import yaml
 from src.workout.exercise import *
-
+from src.workout.workout import *
 
 class WorkoutFactory:
     def __init__(self, path_file):
@@ -14,7 +14,8 @@ class WorkoutFactory:
     def create_workout(self, intensity, muscle_group):
         exercises = self.filter_by_intensity(intensity)
         exercises = self.filter_by_muscle_group(muscle_group, exercises)
-        return exercises
+        wod = Workout(intensity, muscle_group, exercises)
+        return wod
 
     def filter_by_intensity(self, intensity, exercises=[]):
         return list(filter(lambda x: x.intensity == intensity, exercises or self.exercises))
