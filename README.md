@@ -12,8 +12,8 @@ Solución propuesta: crear una interfaz CLI y una pequeña base de datos con eje
 
 La elección de la siguiente lista la discutimos [aquí](https://github.com/fitplusplus/fithub/issues/7)
 
-- Lenguaje: `Python`.
-- Logging: módulo `logging` de `Python` (localmente) y PaperTrails o LogDNA (servidor).
+- Lenguaje: `Python`
+- Logging: módulo `logging` de `Python` (localmente) y PaperTrails o LogDNA (servidor)
 - Servicio de configuración remota: `etcd`.
 - Base de datos: MongoDB al principio, posiblemente PostgreSQL en el futuro.
 
