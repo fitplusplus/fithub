@@ -36,3 +36,9 @@ def test_filter_by_muscle_group():
     names = list(map(lambda x: x.name, filtered_exercises))
     assert names == ['mountainclimber', 'burpee', 'jumpingjack']
     
+def test_create_workout():
+    wf = WorkoutFactory(DATA_FILE)
+    wo = wf.create_workout(Intensity.MEDIUM, MuscleGroup.LOWERBODY)
+
+    assert wo.intensity == Intensity.MEDIUM
+    assert wo.muscle_group == MuscleGroup.LOWERBODY
