@@ -13,3 +13,13 @@ def test_constructor():
     assert wo.intensity == Intensity.HIGH
     assert wo.muscle_group == MuscleGroup.TOTALBODY
     assert wo.exercises == exercises
+
+def test_str():
+    ex1 = Exercise("chaturanga", "medium", "upperbody", "descp", "somelink")
+    wo = Workout(Intensity.HIGH, MuscleGroup.TOTALBODY, [ex1])   
+    output = wo.__str__()
+    
+    assert "Intensity.HIGH" in output
+    assert "MuscleGroup.TOTALBODY" in output
+    assert "chaturanga" in output 
+
