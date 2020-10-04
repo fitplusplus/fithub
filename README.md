@@ -39,3 +39,6 @@ Para ejecutar los tests:
 
 	poetry run poe test
 
+Para generar un reporte de cobertura:
+
+	poetry run poe coverage
