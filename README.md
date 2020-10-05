@@ -42,3 +42,7 @@ Para ejecutar los tests:
 Para generar un reporte de cobertura:
 
 	poetry run poe coverage
+
+Para lanzar el servicio web: 
+
+	export FLASK_APP=src/web_api/server.py && poetry run poe run
