@@ -7,7 +7,7 @@ authors = ["Antonio Gamiz <antoniogamiz10@gmail.com>"]
 [tool.poetry.dependencies]
 python = "3.6.9"
 fire = "^0.3.1"
-pyyaml = "^5.3.1"
+pyyaml = "^5.4"
 pytest-cov = "^2.10.1"
 flask = "^1.1.2"
 
